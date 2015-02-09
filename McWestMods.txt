@@ -2,11 +2,11 @@ Change:
 Top level folder structure (changed names have comment afterward)
   /app
   /assets (instead of content)
-  /bower_component (instead of scripts)
   /components (new, a place to keep local, non third party components)
-  /test
 Why:
   more specific folder names
+  move 3rd party components dirs such as bower_components to parent directory
+  do not use a tet directory, instead place test files in same folder as files under test
 
 Change:
 Omit the type from controller file names (e.g. do not use formulation.controller.js, use formulation.js)

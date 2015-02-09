@@ -1,0 +1,7 @@
+These guidelines have been proposed but not yet approved.
+
+
+Addition: name module setter files _module.js
+Why: file will always be first file in the module directory,
+thus easy to locate (and it will be more apparent when the file is mistakenly omitted, or not included in index.html).
+

@@ -17,3 +17,10 @@ Change:
 Omit the 'Controller' suffix from controller names (e.g. do not use FormulationController, use Formulation)
 Why:
 Controllers are still easily identifiable.
+
+Addition:
+Name feature modules using correct plurality (e.g. use 'dashboard' for a module that
+implements only one dashboard, but use 'nutrients' not 'nutrient' for a module that implements processing of
+one or more nutrients).
+Why:
+Names should be consistent with plurality.

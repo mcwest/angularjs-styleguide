@@ -5,7 +5,7 @@ BASIS:
 
 MODIFICATIONS FROM JOHN PAPA: See McWestMods.txt and McWestModsProposed.txt
 
-NOTE: All page content below here is primary authored by John Papa. 
+## NOTE: content below here primary authored by John Papa. 
 
 If you are looking for an opinionated style guide for syntax, conventions, and structuring AngularJS applications, then step right in. These styles are based on my development experience with [AngularJS](//angularjs.org), presentations, [Pluralsight training courses](http://pluralsight.com/training/Authors/Details/john-papa) and working in teams.
 

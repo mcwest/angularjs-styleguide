@@ -395,9 +395,11 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 ### Bindable Members Up Top
 ###### [Style [Y033](#style-y033)]
 
-  - Place bindable members at the top of the controller, alphabetized, and not spread through the controller code.
+  - Place bindable members at the top of the controller, ordered by functionality (e.g. create, read, update, delete), and not spread through the controller code.
 
     *Why?*: Placing bindable members at the top makes it easy to read and helps you instantly identify which members of the controller can be bound and used in the View.
+
+    *Why?*: Ordering bindable members by functionality makes it easier to find a particular type of function within the controller.
 
     *Why?*: Setting anonymous functions in-line can be easy, but when those functions are more than 1 line of code they can reduce the readability. Defining the functions below the bindable members (the functions will be hoisted) moves the implementation details down, keeps the bindable members up top, and makes it easier to read.
 
@@ -424,11 +426,11 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
   function Sessions() {
       var vm = this;
 
-      vm.gotoSession = gotoSession;
-      vm.refresh = refresh;
-      vm.search = search;
-      vm.sessions = [];
       vm.title = 'Sessions';
+      vm.sessions = [];
+      vm.gotoSession = gotoSession;
+      vm.search = search;
+      vm.refresh = refresh;
 
       ////////////
 
@@ -436,11 +438,11 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
         /* */
       }
 
-      function refresh() {
+      function search() {
         /* */
       }
 
-      function search() {
+      function refresh() {
         /* */
       }
   ```
@@ -474,11 +476,11 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
   function Sessions(dataservice) {
       var vm = this;
 
-      vm.gotoSession = gotoSession;
-      vm.refresh = dataservice.refresh; // 1 liner is OK
-      vm.search = search;
-      vm.sessions = [];
       vm.title = 'Sessions';
+      vm.sessions = [];
+      vm.gotoSession = gotoSession;
+      vm.search = search;
+      vm.refresh = dataservice.refresh; // 1 liner is OK
   ```
 
 ### Function Declarations to Hide Implementation Details

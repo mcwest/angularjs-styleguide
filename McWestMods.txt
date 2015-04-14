@@ -24,3 +24,11 @@ implements only one dashboard, but use 'nutrients' not 'nutrient' for a module t
 one or more nutrients).
 Why:
 Names should be consistent with plurality.
+
+Change: 
+Order functions in controller by functionality, not alphabetical by name. 
+Why: 
+It is easy to find a function by name using an IDE. Sorting functions by functionality 
+allows consistent location of similar types of functionlity, regardless of function name. 
+For example, a controller responsible for Create, Read, Update, and Delete data operations might have its create functions first, 
+then read, then update, and finally delete. 

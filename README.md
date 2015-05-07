@@ -392,10 +392,10 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
   }
   ```
 
-### Bindable Members Up Top
+### Bindable Members Up Top In Enclosing Module
 ###### [Style [Y033](#style-y033)]
 
-  - Place bindable members at the top of the controller, ordered by functionality (e.g. create, read, update, delete), and not spread through the controller code.
+  - Place declarations of bindable members at the top of the controller in an enclosing module, ordered by functionality (e.g. create, read, update, delete), and not spread through the controller code. Order the method implementations in the same order as the 
 
     *Why?*: Placing bindable members at the top makes it easy to read and helps you instantly identify which members of the controller can be bound and used in the View.
 

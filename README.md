@@ -395,11 +395,11 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 ### Bindable Members Up Top In Enclosing Module
 ###### [Style [Y033](#style-y033)]
 
-  - Place declarations of bindable members at the top of the controller in an enclosing module, ordered by functionality (e.g. create, read, update, delete), and not spread through the controller code. Order the method implementations in the same order as the 
+  - Place declarations of bindable members at the top of the controller in an enclosing module, ordered by functionality (e.g. create, read, update, delete), and not spread through the controller code. Order the method implementations in the 'up top' section in the same order as they are ordered in the lower (implementation) section.  
 
     *Why?*: Placing bindable members at the top makes it easy to read and helps you instantly identify which members of the controller can be bound and used in the View.
 
-    *Why?*: Ordering bindable members by functionality makes it easier to find a particular type of function within the controller.
+    *Why?*: Ordering bindable members by functionality both 'up top' and in the implementation section makes it easier to find a particular type of function within the controller, and to identifier implementations that are not bindable.
 
     *Why?*: Setting anonymous functions in-line can be easy, but when those functions are more than 1 line of code they can reduce the readability. Defining the functions below the bindable members (the functions will be hoisted) moves the implementation details down, keeps the bindable members up top, and makes it easier to read.
 

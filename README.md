@@ -1874,17 +1874,6 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
     avenger-profile.directive.spec.js
     ```
 
-  Note: Another common convention is naming controller files without the word `controller` in the file name such as `avengers.js` instead of `avengers.controller.js`. All other conventions still hold using a suffix of the type. Controllers are the most common type of component so this just saves typing and is still easily identifiable. I recommend you choose 1 convention and be consistent for your team.
-
-    ```javascript
-    /**
-     * recommended
-     */
-    // Controllers
-    avengers.js
-    avengers.spec.js
-    ```
-
 ### Test File Names
 ###### [Style [Y122](#style-y122)]
 
@@ -1929,30 +1918,11 @@ While this guide explains the *what*, *why* and *how*, I find it helpful to see 
 ### Controller Name Suffix
 ###### [Style [Y124](#style-y124)]
 
-  - Append the controller name with the suffix `Controller` or with no suffix. Choose 1, not both.
+  - Append the controller name with the suffix `Controller`. 
 
     *Why?*: The `Controller` suffix is more commonly used and is more explicitly descriptive.
 
-    *Why?*: Omitting the suffix is more succinct and the controller is often easily identifiable even without the suffix.
-
     ```javascript
-    /**
-     * recommended: Option 1
-     */
-
-    // avengers.controller.js
-    angular
-        .module
-        .controller('Avengers', Avengers);
-
-    function Avengers() { }
-    ```
-
-    ```javascript
-    /**
-     * recommended: Option 2
-     */
-
     // avengers.controller.js
     angular
         .module
